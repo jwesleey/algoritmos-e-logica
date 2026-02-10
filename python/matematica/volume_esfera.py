@@ -9,6 +9,8 @@ V = 4/3 * π * r³
 
 raio = float(input("Digite o raio da esfera: "))
 
-volume = (4/3) * math.pi * raio ** 3
-
-print(f"Volume = {volume:.2f} unidades cúbicas.")
+if raio <= 0:
+    print("O raio não pode ser menor ou igual a 0")
+else:
+    volume = (4 / 3) * math.pi * raio ** 3
+    print(f"Volume = {volume:.2f} unidades cúbicas.")
